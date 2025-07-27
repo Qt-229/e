@@ -142,3 +142,36 @@ header {
 .child:hover .label {
     display: block;
 } */
+
+/* Tablet View: 772px and below */
+@media (max-width: 772px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw; /* Optional: space between items */
+  }
+  .child {
+    width: 45vw;             /* 45% of viewport width */
+    margin: 10px 0;          /* Optional: adjust vertical spacing */
+  }
+  .child img {
+    max-height: 30vh;        /* 30% of viewport height */
+    width: 100%;             /* Make image fill the .child width */
+    object-fit: cover;       /* Keeps image nicely scaled */
+  }
+}
+
+/* Large Screen View: 998px and below */
+@media (max-width: 998px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+  }
+  .child {
+    width: 30vw;             /* 30% of viewport width */
+    margin: 10px 0;
+  }
+}
